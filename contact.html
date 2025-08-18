@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Contact — HCC Coding</title>
+<link rel="stylesheet" href="assets/style.css"/>
+</head><body>
+
+<header class="header" role="banner">
+  <div class="container nav" aria-label="Main navigation">
+    <a href="index.html" class="brand" aria-label="Go to home">
+      <img src="assets/logo.svg" alt="HCC Coding logo" height="36" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="payer.html">Payer Solutions</a></li>
+        <li><a href="compliance.html">Compliance</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section"><div class="container">
+<h1>Contact Us</h1>
+<p>Tell us about your HCC program. We’ll respond within one business day.</p>
+<form onsubmit="event.preventDefault(); alert('Thanks! Connect this form to Wix or your email service in production.');">
+  <div class="grid" style="grid-template-columns:1fr 1fr; gap:14px;">
+    <div><label class="small" for="name">Name</label><input id="name" required /></div>
+    <div><label class="small" for="email">Email</label><input id="email" type="email" required /></div>
+  </div>
+  <div><label class="small" for="phone">Phone</label><input id="phone" /></div>
+  <div><label class="small" for="msg">Message</label><textarea id="msg" rows="6" required></textarea></div>
+  <button type="submit">Request a Free Pilot Project</button>
+</form>
+</div></section>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;">
+      <div>&copy; <span id="year"></span> Your Company Name — HCC Medical Coding</div>
+      <div class="small">Marketing site only — no PHI collected. BAAs available.</div>
+    </div>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body></html>
