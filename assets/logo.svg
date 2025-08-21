@@ -1,7 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40">
-  <rect width="200" height="40" fill="white"/>
-  <rect x="5" y="5" width="30" height="30" rx="6" fill="#0099CC"/>
-  <rect x="16" y="9" width="8" height="22" fill="white"/>
-  <rect x="10" y="16" width="20" height="8" fill="white"/>
-  <text x="50" y="26" font-family="Arial, sans-serif" font-size="20" fill="#003366" font-weight="700">HealthCareITAI</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" fill="none" role="img" aria-label="HealthCareITAI logo">
+  <title>HealthCareITAI Logo</title>
+  <desc>A professional healthcare + AI logo with a medical cross and circuit heart icon and the wordmark HealthCareITAI</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <!-- Icon -->
+  <g transform="translate(60,60)" filter="url(#shadow)">
+    <!-- Rounded medical cross -->
+    <rect x="0" y="0" rx="28" ry="28" width="220" height="220" fill="#0E4B75"/>
+    <rect x="90" y="36" width="40" height="148" fill="white"/>
+    <rect x="36" y="90" width="148" height="40" fill="white"/>
+    <!-- Circuit heart overlay -->
+    <path d="M214 70              C255 70 288 103 288 144              C288 165 279 184 265 198              L214 248              L163 198              C149 184 140 165 140 144              C140 103 173 70 214 70 Z" fill="none" stroke="#2EC8A6" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- circuit traces -->
+    <path d="M165 170 L205 130" stroke="#2EC8A6" stroke-width="16" stroke-linecap="round"/>
+    <path d="M205 210 L245 170" stroke="#2EC8A6" stroke-width="16" stroke-linecap="round"/>
+    <!-- nodes -->
+    <circle cx="158" cy="178" r="12" fill="#2EC8A6"/>
+    <circle cx="205" cy="124" r="12" fill="#2EC8A6"/>
+    <circle cx="252" cy="169" r="12" fill="#2EC8A6"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(340,125)">
+    <text x="0" y="0" font-family="Montserrat, Inter, Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#163A59">HealthCare</text>
+    <text x="0" y="100" font-family="Montserrat, Inter, Arial, Helvetica, sans-serif" font-size="92" font-weight="700" fill="#2EC8A6">ITAI</text>
+  </g>
 </svg>
