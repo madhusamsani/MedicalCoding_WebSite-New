@@ -1,50 +1,42 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Contact — HCC Coding</title>
-<link rel="stylesheet" href="assets/style.css"/>
-</head><body>
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
-<header class="header" role="banner">
-  <div class="container nav" aria-label="Main navigation">
-    <a href="index.html" class="brand" aria-label="Go to home">
-      <img src="assets/logo.svg" alt="HCC Coding logo" height="36" />
-    </a>
-    <nav>
-      <ul>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="payer.html">Payer Solutions</a></li>
-        <li><a href="compliance.html">Compliance</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-<main>
-<section class="section"><div class="container">
-<h1>Contact Us</h1>
-<p>Tell us about your HCC program. We’ll respond within one business day.</p>
-<form onsubmit="event.preventDefault(); alert('Thanks! Connect this form to Wix or your email service in production.');">
-  <div class="grid" style="grid-template-columns:1fr 1fr; gap:14px;">
-    <div><label class="small" for="name">Name</label><input id="name" required /></div>
-    <div><label class="small" for="email">Email</label><input id="email" type="email" required /></div>
-  </div>
-  <div><label class="small" for="phone">Phone</label><input id="phone" /></div>
-  <div><label class="small" for="msg">Message</label><textarea id="msg" rows="6" required></textarea></div>
-  <button type="submit">Request a Free Pilot Project</button>
-</form>
-</div></section>
-</main>
+app.use(bodyParser.urlencoded({ extended: true }));
 
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;">
-      <div>&copy; <span id="year"></span> All Rights Reserved by HealthCareITAI</div>
-      <div class="small">Marketing site only — no PHI collected. BAAs available.</div>
-    </div>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</footer>
+// Replace with your email provider config
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'madhu.samsani@gmail.com',      // your Gmail address
+    pass: 'Madhu@1234',            // Gmail App Password, NOT your regular password
+  },
+});
 
-</body></html>
+app.post('/contact', (req, res) => {
+  const { name, email, phone, msg } = req.body;
+  const mailOptions = {
+    from: `"${name}" <${email}>`,
+    to: 'madhu.samsani@gmail.com',
+    subject: 'New Contact Form Submission',
+    text: `Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Message: ${msg}`,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      return res.status(500).send('Error sending email.');
+    }
+    res.send('Thank you for contacting us!');
+  });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
