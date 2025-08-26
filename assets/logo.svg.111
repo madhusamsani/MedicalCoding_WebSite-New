@@ -4,7 +4,7 @@
 
   <!-- Replace shapes with your own image -->
   <image 
-    href="mylogo.png"  <!-- 👈 put your image filename here -->
+    href="assets/HealthCareITAI1.jpg"  <!-- 👈 put your image filename here -->
     x="5" 
     y="5" 
     width="30" 
