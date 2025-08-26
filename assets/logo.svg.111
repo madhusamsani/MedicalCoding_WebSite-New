@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40">
   <!-- Background -->
-  <rect width="500" height="40" fill="white"/>
+  <rect width="200" height="40" fill="white"/>
 
-  <!-- Replace shapes with your own image -->
+  <!-- Company Logo Image (replace with your actual image path if needed) -->
   <image 
-    href="assets/HealthCareITAI1.jpg"  <!-- 👈 put your image filename here -->
+    href="assets/HealthCareITAI1.jpg"  
     x="5" 
     y="5" 
     width="30" 
