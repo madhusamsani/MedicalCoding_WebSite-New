@@ -4,7 +4,7 @@
 
   <!-- Company Logo Image (replace with your actual image path if needed) -->
   <image 
-    href="assets/HealthCareITAI1.jpg"  
+    href="/assets/HealthCareITAI1.jpg"  
     x="5" 
     y="5" 
     width="30" 
