@@ -6,7 +6,7 @@
     <style>
       .globe-line { stroke:#00A8B0; stroke-width:3; fill:none; }
       .globe-circle { stroke:#00A8B0; stroke-width:3; fill:none; }
-      .brand-text { font-family: 'Segoe UI', Roboto, sans-serif; font-weight: 1000; font-size:140px; fill:#006C74; }
+      .brand-text { font-family: 'Segoe UI', Roboto, sans-serif; font-weight: 1100; font-size:140px; fill:#006C74; }
     </style>
   </defs>
 
