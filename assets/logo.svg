@@ -1,15 +1,29 @@
-<div style="display:flex; align-items:center; gap:20px;">
-  <!-- Globe SVG -->
-  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 300 300">
-    <circle cx="150" cy="150" r="140" stroke="#00A8B0" stroke-width="8" fill="none"/>
-    <ellipse cx="150" cy="150" rx="70" ry="140" stroke="#00A8B0" stroke-width="4" fill="none"/>
-    <ellipse cx="150" cy="150" rx="140" ry="70" stroke="#00A8B0" stroke-width="4" fill="none"/>
-    <path d="M 40 150 L 260 150 M 150 40 L 150 260 M 70 70 L 230 230 M 230 70 L 70 230"
-          stroke="#00A8B0" stroke-width="4" fill="none"/>
-  </svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
+  <title id="title">HealthCareITAI Logo</title>
+  <desc id="desc">A geometric wireframe globe with teal lines on the left, and the company name HealthCareITAI on the right.</desc>
+  <defs>
+    <style>
+      .globe-line { stroke:#00A8B0; stroke-width:2.5; fill:none; }
+      .globe-circle { stroke:#00A8B0; stroke-width:2.5; fill:none; }
+      .brand-text { font-family: 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size:72px; fill:#008C95; }
+    </style>
+  </defs>
 
-  <!-- Company name in bold text -->
-  <span style="font-size:48px; font-weight:900; color:#006C74;">
-    HealthCareITAI
-  </span>
-</div>
+  <!-- Globe group -->
+  <g transform="translate(120,125) scale(1.2)">
+    <!-- Outer circle -->
+    <circle r="90" class="globe-circle"/>
+    <!-- Longitudes -->
+    <ellipse rx="45" ry="90" class="globe-line"/>
+    <ellipse rx="90" ry="45" class="globe-line"/>
+    <!-- Diagonal wireframe -->
+    <path d="M -70,-70 L 70,70" class="globe-line"/>
+    <path d="M 70,-70 L -70,70" class="globe-line"/>
+    <path d="M -90,0 L 90,0" class="globe-line"/>
+    <path d="M 0,-90 L 0,90" class="globe-line"/>
+  </g>
+
+  <!-- Brand text -->
+  <text x="250" y="145" class="brand-text">HealthCareITAI</text>
+</svg>
