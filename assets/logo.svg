@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="325" viewBox="0 0 1040 325" role="img" aria-labelledby="title desc">
-  <title id="title">HealthCareITAI Logo - Enlarged 30% with AI emphasis</title>
-  <desc id="desc">A geometric wireframe globe with teal lines on the left, and the company name HealthCareITAI on the right with AI emphasized and bold.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1768" height="553" viewBox="0 0 1040 325" role="img" aria-labelledby="title desc">
+  <title id="title">HealthCareITAI Logo - 170% Size Bold</title>
+  <desc id="desc">A geometric wireframe globe with teal lines on the left, and the company name HealthCareITAI on the right in bold style. This file is 70% larger than the prior big version.</desc>
   <defs>
-    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00B4C0"/>
-      <stop offset="100%" stop-color="#007A8A"/>
-    </linearGradient>
-    <style>
-      .globe-line { stroke:#00A8B0; stroke-width:3.25; fill:none; }
-      .globe-circle { stroke:#00A8B0; stroke-width:3.25; fill:none; }
-      .brand-text { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size:96px; fill:#006C74; letter-spacing:1px; dominant-baseline:middle; }
-      .ai-part { font-weight:900; fill:url(#aiGrad); }
-    </style>
+    <style type="text/css"><![CDATA[
+      .globe-line { stroke:#00A8B0; stroke-width:5.5; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .globe-circle { stroke:#00A8B0; stroke-width:5.5; fill:none; }
+      .brand-text { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size:164px; fill:#006C74; letter-spacing:1px; dominant-baseline:middle; }
+    ]]></style>
   </defs>
 
-  <!-- Globe group (scaled up slightly to match larger canvas) -->
+  <!-- Globe group (left) -->
   <g transform="translate(156,162) scale(1.44)">
-    <!-- Outer circle -->
     <circle r="90" class="globe-circle"/>
-    <!-- Longitudes and latitudes (wireframe) -->
     <ellipse rx="45" ry="90" class="globe-line"/>
     <ellipse rx="90" ry="45" class="globe-line"/>
     <path d="M -70,-70 L 70,70" class="globe-line"/>
@@ -28,11 +21,8 @@
     <path d="M 0,-90 L 0,90" class="globe-line"/>
   </g>
 
-  <!-- Brand text: split so "AI" can be highlighted -->
+  <!-- Brand text: all bold -->
   <g transform="translate(300,180)" >
-    <text class="brand-text">
-      <tspan x="0" y="0">HealthCareIT</tspan>
-      <tspan class="ai-part" x="540" y="0">AI</tspan>
-    </text>
+    <text class="brand-text">HealthCareITAI</text>
   </g>
 </svg>
