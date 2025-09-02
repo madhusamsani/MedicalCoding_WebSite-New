@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="430" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
   <title id="title">HealthCareITAI Logo</title>
-  <desc id="desc">A geometric wireframe globe with teal lines on the left, and the company name HealthCareITAI on the right.</desc>
+  <desc id="desc">A geometric wireframe globe with teal lines on the left, and the company name HealthCareITAI on the right in bold style.</desc>
   <defs>
     <style>
-      .globe-line { stroke:#00A8B0; stroke-width:2.5; fill:none; }
-      .globe-circle { stroke:#00A8B0; stroke-width:2.5; fill:none; }
-      .brand-text { font-family: 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size:72px; fill:#008C95; }
+      .globe-line { stroke:#00A8B0; stroke-width:3; fill:none; }
+      .globe-circle { stroke:#00A8B0; stroke-width:3; fill:none; }
+      .brand-text { font-family: 'Segoe UI', Roboto, sans-serif; font-weight: 900; font-size:96px; fill:#006C74; }
     </style>
   </defs>
 
   <!-- Globe group -->
-  <g transform="translate(120,125) scale(1.2)">
+  <g transform="translate(140,160) scale(1.5)">
     <!-- Outer circle -->
     <circle r="90" class="globe-circle"/>
     <!-- Longitudes -->
@@ -25,5 +25,5 @@
   </g>
 
   <!-- Brand text -->
-  <text x="250" y="145" class="brand-text">HealthCareITAI</text>
+  <text x="320" y="200" class="brand-text">HealthCareITAI</text>
 </svg>
